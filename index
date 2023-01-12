@@ -1,0 +1,21 @@
+<!doctype html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>rill cuy</title>
+		</head>
+		<body>
+			<?php 
+		if (isset($_POST['yes'])) :
+			$nama = $_POST['nama'];
+			$nomor = $_POST['absen'];
+			$address = $_POST['alamat'];
+			?>
+			<h2>HASIL</h2>
+			<h3> NAMA : <?= $nama?></h3>
+			<h3> NO. ABSEN : <?= $nomor?></h3>
+			<h3> ALAMAT : <?= $address?></h3>
+		<?php endif;
+		 ?>
+		</body>
+	</html>	
